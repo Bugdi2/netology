@@ -112,10 +112,10 @@ a{
 }
 
 .container{
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
     margin: 0 auto;
-    max-width: 1300px;
+    max-width: 1200px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;  
@@ -132,6 +132,7 @@ a{
 }
 
 .menu__item a{
+    text-transform: uppercase;
     color: white;
 }
 
@@ -165,20 +166,32 @@ a{
 }
 
 .card{
+    margin-top: 58px;
     display: flex;
 }
 
 .picture{
-    margin-top: 61px;
+    margin-top: 58px;
 }
 
-.type{
-    padding-bottom: 15px;
-    padding-right: 25px;
+.picture img{
+    width: 381px;
+    height: 294px;
+}
+
+.type a{
+    margin-right: 25px;
     color:#b59f5b;
     font-size: 14px;
-    font-weight: bold;
+    font-weight: bolder;
     text-transform: uppercase;
+}
+
+.type a:hover {
+    border-bottom: 2px solid #b59f5b;
+    font-weight: bold;
+    width: 50px;
+
 }
 
 .info{
@@ -188,6 +201,7 @@ a{
 
 .info__title h2 a{
     color: black;
+    font-size: 20px;
 }
 
 .info__title h2{
@@ -237,7 +251,7 @@ time{
 }
 
 .aside{
-    margin-left: 156px;
+    margin-left: 50px;
     padding-right: 15px;
     max-width: 300px;
 }
@@ -301,6 +315,7 @@ time{
 }
 
 .email .email__button{
+    font-size: 14px;
     width: 272px;
     height: 48px;
     background-color: #b59f5b;
