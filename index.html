@@ -3,7 +3,7 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
     
     <title> NOEMI</title>
 </head>
@@ -37,8 +37,10 @@
         <div class="trends__galery">
             <div class="galary__item item1">
                 <div class="item__info">
-                    <span class="type"> travel </span>
-                    <span class="type"> health </span>
+                    <ul class="tags">
+                        <li class="type"> travel </li>
+                        <li class="type"> health </li>
+                    </ul>
                     <div class="galary__title">
                         <h2>
                             <a href="#0">Сейчас в тренде: сад на подоконнике</a>
@@ -91,8 +93,10 @@
             <section class="card">
                 <div class="picture"><img src="img/1.png" alt="Человек идет по песку"></div>
                 <div class="info">
-                    <span class="type"> <a href="#">travel</a> </span>
-                    <span class="type"> <a href="#">health </a> </span>
+                    <ul class="tags">
+                        <li class="type"> <a href="#">travel</a> </li>
+                        <li class="type"> <a href="#">health </a> </li>
+                    </ul>
                     <div class="info__title">
                         <h2>
                             <a href="#0">10 мест, ради которых стоит проснуться на рассвете</a>
@@ -110,8 +114,10 @@
             <section class="card">
                 <div class="picture"><img src="img/2.png" alt="Йога"></div>
                 <div class="info">
-                    <span class="type"> <a href="#">health</a> </span>
-                    <span class="type"> <a href="#">lifestyle</a> </span>
+                    <ul class="tags">
+                        <li class="type"> <a href="#">health</a> </li>
+                        <li class="type"> <a href="#">lifestyle</a> </li>
+                    </ul>
                     <div class="info__title">
                         <h2>
                             <a href="#0">йога для начинающих в домашних условиях</a>
@@ -129,8 +135,11 @@
             <section class="card">
                 <div class="picture"><img src="img/3.png" alt="Лето"></div>
                 <div class="info">
-                    <span class="type"> <a href="#">music</a> </span>
+                    <ul class="tags">
+                        <li class="type"> <a href="#">music</a> </li>
+                    </ul>
                     <div class="info__title">
+                    
                         <h2>
                             <a href="#0">Лучшие музыкальные фестивали этого лета</a>
                         </h2>
@@ -151,8 +160,10 @@
             <section class="card">
                 <div class="picture"><img src="img/4.png" alt="Еда на столе"></div>
                 <div class="info">
-                    <span class="type"> <a href="#">LYFESTYLE</a> </span>
-                    <span class="type"> <a href="#">FOOD</a> </span>
+                    <ul class="tags">
+                        <li class="type"> <a href="#">lyfestyle</a> </li>
+                        <li class="type"> <a href="#">food</a> </li>
+                    </ul>
                     <div class="info__title">
                         <h2>
                             <a href="#0">Наукоёмкий подход к кулинарии</a>
@@ -171,9 +182,11 @@
             <section class="card">
                 <div class="picture"><img src="img/5.png" alt="Подушка"></div>
                 <div class="info">
-                    <span class="type"> <a href="#">LYFESTYLE</a> </span>
-                    <span class="type"> <a href="#">INTERIOR</a>  </span>
-                    <span class="type"> <a href="#">ART</a> </span>
+                    <ul class="tags">
+                        <li class="type"> <a href="#">lyfestyle</a> </li>
+                        <li class="type"> <a href="#">interior</a>  </li>
+                        <li class="type"> <a href="#">art</a> </li>
+                    </ul>
                     <div class="info__title">
                         <h2>
                             <a href="#0"> делаем модные принты на подушках для интерьера </a>
@@ -246,6 +259,7 @@
             </section>
             
             <form class="search"> 
+                <span class="visually-hidden">Поисковик</span>
                 <input type="search" class="search__input" placeholder="Найти...">
                 <button type="submit" class="search__button"><img src="img/search.png" alt="search"></button>
             
@@ -254,6 +268,7 @@
             <div class="aside__titles"><h3>Рассылка</h3></div>
             
             <form class="email"> 
+                <span class="visually-hidden"> Введите почту</span>
                 <input type="email" class="email__input" placeholder="Ваш email-адрес">
                 <button type="submit" class="email__button">подписаться</button>
             
@@ -262,15 +277,16 @@
              <div class="aside__titles"><h3>Теги</h3></div>
             
             <section class="tags">
-                <a href="#0"class="tag">fashion</a>
-                <a href="#0"class="tag">music</a>
-                <a href="#0"class="tag">Lifestyle</a>
-                <a href="#0"class="tag">art</a>
-                <a href="#0"class="tag">Interior</a>
-                <a href="#0"class="tag">travel</a>
-                <a href="#0"class="tag">food</a>
-                <a href="#0"class="tag">health</a>
-                
+                <ul class="tags__items">
+                    <li> <a href="#0"class="tag">fashion</a> </li>
+                    <li> <a href="#0"class="tag">music</a> </li>
+                    <li> <a href="#0"class="tag">Lifestyle</a> </li>
+                    <li> <a href="#0"class="tag">art</a>  </li>
+                    <li> <a href="#0"class="tag">Interior</a> </li>
+                    <li> <a href="#0"class="tag">travel</a> </li>
+                    <li> <a href="#0"class="tag">food</a> </li>
+                    <li> <a href="#0"class="tag">health</a> </li>
+                </ul>
             </section>
             
             <div class="aside__titles"><h3>Темы</h3></div>
@@ -351,12 +367,29 @@
         
          <footer class="footer">
              <div class="social">
-                <span class="social__logo"><a href="#0"><img src="img/twitter.png" alt="twitter"></a></span>
-                <span class="social__logo"><a href="#0"><img src="img/pinterest.png" alt="pinterest"></a></span>
-                <span class="social__logo"><a href="#0"><img src="img/tumblr.png" alt="tumblr"></a></span>
+                <span class="social__logo">
+                    <a href="#0">
+                        <span class="visually-hidden"> Twitter почту</span>
+                        <img src="img/twitter.png" alt="twitter">
+                    </a>
+                 </span>
+                <span class="social__logo">
+                    <a href="#0">
+                        <span class="visually-hidden"> Pinterest </span>
+                        <img src="img/pinterest.png" alt="pinterest">
+                    </a>
+                 </span>
+                <span class="social__logo">
+                    <a href="#0">
+                         <span class="visually-hidden"> Tumblr</span>
+                        <img src="img/tumblr.png" alt="tumblr">
+                    </a>
+                 </span>
             </div>
              
-             <div class="copy">Copyright © 2009–2019 City Blog LLC.</div>
+             <div class="copy">
+                 <a href="#0" style="color: grey">Copyright © 2009–2019 City Blog LLC.</a>
+             </div>
                 
         </footer>
     </div>
