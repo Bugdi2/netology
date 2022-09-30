@@ -170,13 +170,16 @@ a{
     display: flex;
 }
 
-.picture{
-    margin-top: 58px;
-}
-
 .picture img{
+    display: block;
     width: 381px;
     height: 294px;
+}
+
+.tags {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .type a{
@@ -195,13 +198,16 @@ a{
 }
 
 .info{
-    margin-top: 61px;
     padding-left: 30px;
 }
 
 .info__title h2 a{
     color: black;
     font-size: 20px;
+}
+
+.info__title h2 a:hover {
+    color: #b59f5b;
 }
 
 .info__title h2{
@@ -280,12 +286,21 @@ time{
     color: black;
 }
 
+.search {
+    margin-top: 55px;
+    display: flex;
+}
+
 .search .search__input {
     padding:19px;
     width: 225px;
     height: 48px;
     border: none;
     background-color: #f4f7f6;
+}
+
+.search .search__input:focus {
+    border-color: #b59f5b;
 }
 
 .search .search__button{
@@ -295,11 +310,6 @@ time{
     border: none;
 }
 
-.search {
-    margin-top: 55px;
-    display: flex;
-}
-
 .email {
     margin-top: 23px;
     display: flex;
@@ -307,11 +317,13 @@ time{
 }
 
 .email .email__input {
+    box-sizing: border-box;
     margin-bottom: 17px;
     width: 272px;
     height: 48px;
     border: none;
     background-color: #f4f7f6;
+    padding-left: 18px;
 }
 
 .email .email__button{
@@ -325,29 +337,47 @@ time{
     color: white;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+} 
+
 .tags{
     display: flex;
     flex-wrap: wrap;
     margin-top: 24px;
 }
 
-.tag{
+.tags__items {
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.tags__items .tag{
     text-transform: uppercase;
     color: black;
     border: 3px solid #eeeeee;
     font-size: 12px;
     background-color: inherit;
+    font-weight: bold;
     cursor: pointer;
     margin-left: 5px;
     margin-top: 6px;
     padding: 8px 18px;
+    line-height: 3.5;
 }
 
 .tag:hover{
-    font-weight: bold;
-}
-
-.tag:focus{
+    font-weight: 1000;
     border: 3px solid #b59f5b;
 }
 
