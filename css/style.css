@@ -296,7 +296,7 @@ time{
 
 .search .search__input {
     padding:19px;
-    width: 225px;
+    width: 272px;
     height: 48px;
     outline: none;
     border: none;
@@ -308,11 +308,12 @@ time{
 }
 
 .search .search__button{
-    height: 47px;
-    width: 47px;
+    height: 48px;
+    width: 48px;
     background-color: #b59f5b;
     border: none;
     cursor: pointer;
+    margin-left: -47px;
 }
 
 .email {
