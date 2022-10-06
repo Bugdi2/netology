@@ -77,6 +77,8 @@ a{
     background-repeat: no-repeat;
     background-size: cover;
     margin-right: 4px;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.5);
+    flex: 1;
 }
 
 .item1{
@@ -176,18 +178,17 @@ a{
     height: 294px;
 }
 
-.tags {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.type a{
+.type {
     margin-right: 25px;
     color:#b59f5b;
     font-size: 14px;
     font-weight: bolder;
     text-transform: uppercase;
+}
+
+.type a{
+    color:#b59f5b;
+    font-size: 14px;
 }
 
 .type a:hover {
@@ -289,18 +290,21 @@ time{
 .search {
     margin-top: 55px;
     display: flex;
+    align-content: center;
 }
+
 
 .search .search__input {
     padding:19px;
     width: 225px;
     height: 48px;
+    outline: none;
     border: none;
     background-color: #f4f7f6;
 }
 
 .search .search__input:focus {
-    border-color: #b59f5b;
+    outline: 1px solid #b59f5b;
 }
 
 .search .search__button{
@@ -308,6 +312,7 @@ time{
     width: 47px;
     background-color: #b59f5b;
     border: none;
+    cursor: pointer;
 }
 
 .email {
@@ -315,6 +320,7 @@ time{
     display: flex;
     flex-wrap: wrap;
 }
+
 
 .email .email__input {
     box-sizing: border-box;
@@ -326,6 +332,11 @@ time{
     padding-left: 18px;
 }
 
+.email__input:focus{
+     outline: 1px solid #b59f5b;   
+}
+
+
 .email .email__button{
     font-size: 14px;
     width: 272px;
@@ -335,6 +346,7 @@ time{
     text-transform: uppercase;
     font-weight: bold;
     color: white;
+    cursor: pointer;
 }
 
 .visually-hidden {
@@ -351,6 +363,11 @@ time{
 .tags{
     display: flex;
     flex-wrap: wrap;
+    text-transform: uppercase;
+    list-style-type: none;
+}
+
+.aside__tags{
     margin-top: 24px;
 }
 
