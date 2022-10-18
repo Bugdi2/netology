@@ -538,7 +538,7 @@ sup{
     color:#999999;
 }
 
-@media (max-width: 1050px) and (min-width: 362px) {
+@media (max-width: 1024px) and (min-width: 362px) {
     
     .trends__galery{
         display: grid;
@@ -598,8 +598,9 @@ sup{
     .products__rabbit{
         padding-bottom: 30px;
     }
+}
   
-    @media (min-width: 361px) {
+    @media (max-width: 361px) {
         
         .container {
             max-width: 330px;
@@ -610,13 +611,15 @@ sup{
         }
         
         .header__logo a img{
-            width: 270px;
+            width: 200%;
         }
         
         .header{
             min-height: 450px;
     }
-        .header__title {
-            font-size: 26px;
+        
+        .trends__galery {
+            display: flex;
+           flex-direction: column;
         }
     }
