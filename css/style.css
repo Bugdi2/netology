@@ -17,6 +17,7 @@ a{
 }
 
 
+
 .header{
     position: relative;
     background-image: url("img/header_1920.png");
@@ -104,7 +105,7 @@ a{
     padding-left: 33px;
     padding-top: 25px;
     padding-bottom: 30px;
-    padding-right: 90px;
+    padding-right: 50px;
 }
 
 .galary__title h2 a{
@@ -536,3 +537,86 @@ sup{
     font-weight: bold;
     color:#999999;
 }
+
+@media (max-width: 1050px) and (min-width: 362px) {
+    
+    .trends__galery{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        grid-row-gap: 5px; 
+}
+    
+    .container{
+    max-width: 750px;
+}
+
+    .header__menu{
+        display: none;
+    }
+    
+    .card {
+        margin-top: 58px;
+        display: flex;
+        flex-direction: column;
+        max-width: 350px;
+        
+}
+    .info {
+        padding: 0;
+    }   
+    
+    .info__text p {
+        padding-top: 35px;
+    }
+    
+    .info .tags {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .products__title {
+        width: 700px;
+    }
+    
+    .products {
+        flex-wrap: wrap;  
+        justify-content: flex-start;
+    }
+
+    
+    .products__item {
+        max-width: 320px;
+        
+    }
+    
+    .products__info{
+        align-self:stretch;
+    }
+    
+    .products__rabbit{
+        padding-bottom: 30px;
+    }
+  
+    @media (min-width: 361px) {
+        
+        .container {
+            max-width: 330px;
+        }
+        
+        .header__logo{
+            margin: 0 auto;
+        }
+        
+        .header__logo a img{
+            width: 270px;
+        }
+        
+        .header{
+            min-height: 450px;
+    }
+        .header__title {
+            font-size: 26px;
+        }
+    }
