@@ -719,6 +719,7 @@ sup{
         
         .products{
             flex-direction: column;
+            align-items: center;
         }
         
         .products__item{
