@@ -541,12 +541,14 @@ sup{
 @media (max-width: 1024px) and (min-width: 769px) {
     
     .trends__galery{
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-        grid-row-gap: 5px; 
-}
+        flex-wrap:wrap;
+    }
+    
+    .galary__item{
+        flex: none;
+        width: calc(50% - 4px);
+        margin: 2px;
+    }
     
     .container{
     max-width: 750px;
@@ -606,12 +608,8 @@ sup{
             max-width: 100vw;
         }
         
-        .header__logo{
-            margin: 220px 19px 0;
-        }
-        
         .header__logo a img{
-            width: 200%;
+            width: 170%;
         }
         
         .header{
@@ -630,9 +628,9 @@ sup{
         }
         
         .galary__item{
-            width: 380px;
+            width: 100%;
             height: 230px;
-            margin: 0 auto;
+            margin: 2px auto;
             padding: 5px;
         }
         
@@ -741,6 +739,15 @@ sup{
         
         .copy{
             position:static;
+        }
+        
+        .header .container {
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .header__logo{
+            margin: 220px 100px 0 0;
         }
 
      }
