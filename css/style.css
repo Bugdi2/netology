@@ -16,6 +16,132 @@ a{
     text-decoration: none;
 }
 
+.header, .container {
+    z-index: 0;
+}
+
+
+.popup__wrapper {
+    position:fixed;
+    display:flex;
+/*
+    display: none;
+*/
+    align-items:center;
+    justify-content:center;
+    top:0px;
+    left:0px;
+    width:100vw;
+    height:100vh;
+    z-index: 4;
+}
+
+.popup{
+    height: 590px;
+    width: 400px;
+    position:fixed;
+    background-color: white;
+    z-index: 4;
+}
+
+.popup__wrapper:after{
+        content: "";
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+        position:fixed;
+        background-color: #000;
+        opacity: 0.5;
+        z-index:1;
+}
+
+.popup__container{
+    max-width: 330px;
+    display: flex;
+    flex-direction: column;
+    margin: 55px auto 0;
+}
+
+.popup__titles {
+    text-transform: uppercase;
+    font-size: 20px;
+    margin: 0 auto;
+    font-weight: bold; 
+}
+
+.popup__titles:after{
+    margin: 15px auto 0 auto;
+    content: '';
+    display: block;
+    height: 3px;
+    width: 66px;
+    background: #e1d9bd;
+}
+
+.popup__span{
+    display: inline-block;
+    margin-top: 30px;
+    font-size: 13px;
+    color: #6b6b6b;
+}
+
+.popup__input{
+    margin-top: 10px;
+    width: 100%;
+    height: 48px;
+    background-color: #f4f7f6;
+    outline: none;
+    border: none;
+    padding: 0 20px;
+    box-sizing: border-box;
+    
+}
+
+.popup__input:focus,
+.popup__text:focus {
+    outline: 1px solid #b59f5b;
+}
+
+.popup__radio {
+    margin-top: 12px;
+}
+
+#no{
+    margin-left: 15px;
+}
+
+.popup__close{
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: -25px;
+}
+
+.popup__text{
+    width: 100%;
+    height: 130px;
+    outline: none;
+    border: none;
+    background-color: #f4f7f6;
+    box-sizing: border-box;
+    padding: 20px;
+    resize: none;
+}
+
+.popup__button{
+    margin-top: 25px;
+    font-size: 14px;
+    width: 100%;
+    height: 48px;
+    background-color: #b59f5b;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
 
 
 .header{
@@ -628,7 +754,7 @@ sup{
         }
         
         .galary__item{
-            width: 98%;
+            width: 100%;
             height: 230px;
             margin: 2px auto;
         }
