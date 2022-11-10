@@ -2,16 +2,44 @@
 
 <html lang="ru">
 <head>
+    <meta charset="utf-8">
     <meta name='viewport' content='width=device-width,initial-scale=1'/>
     <meta content='true' name='HandheldFriendly'/>
     <meta content='width' name='MobileOptimized'/>
     <meta content='yes' name='apple-mobile-web-app-capable'/>
-    <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
+    
     
     <title> NOEMI</title>
 </head>
 <body>
+    
+    <div class="popup__wrapper">
+        <div class="popup">
+            <div class="popup__container">
+                <img src="img/close.png" class="popup__close" alt="Закрыть">
+                <h1 class="popup__titles">Ваш Фидбек</h1>
+                <section class="popup__form">
+                    <span class="popup__span">Как часто вы заходите на сайт?</span>
+                    <input type="number" class="popup__input" placeholder="Почти каждый день">
+                    <span class="popup__span">Вы подписаны на e-mail рассылку?</span>
+                    <div class="popup__radio">
+                        <input name="point" type="radio" id="yes"> <label for="yes">Да</label>
+                        <input name="point" type="radio" id="no"> <label for="no">Нет</label>
+                    </div>
+                    
+                    <span class="popup__span">Расскажите, какой контент вы хотели бы видеть
+на нашем сайте?</span>
+                    
+                    <textarea name="comment" class="popup__text" placeholder="Может, больше рецептов?"> </textarea>
+                    
+                    <button type="submit" class="popup__button">Отправить</button>
+                </section>
+            
+            </div>
+
+        </div>
+    </div>
     <header class="header">
         <div class="container">
             <div class="header__logo">
@@ -302,12 +330,12 @@
             
             <section class="topic">
                 <div class="topic__list">
-                    <span class="list__item"> <a href="#0"> Красота <sup>12</sup> </a> </span>
-                    <span class="list__item"> <a href="#0"> Здоровье <sup>4</sup> </a> </span>
-                    <span class="list__item"> <a href="#0"> Образ жизни <sup>145</sup> </a> </span>
-                    <span class="list__item"> <a href="#0"> Музыка <sup>28</sup> </a> </span>
-                    <span class="list__item"> <a href="#0"> Спорт <sup>62</sup> </a> </span>
-                    <span class="list__item"> <a href="#0"> Йога <sup>8</sup> </a> </span>
+                    <span class="list__item"> <a href="#0"> Красота <span>12</span> </a> </span>
+                    <span class="list__item"> <a href="#0"> Здоровье <span>4</span> </a> </span>
+                    <span class="list__item"> <a href="#0"> Образ жизни <span>145</span> </a> </span>
+                    <span class="list__item"> <a href="#0"> Музыка <span>28</span> </a> </span>
+                    <span class="list__item"> <a href="#0"> Спорт <span>62</span> </a> </span>
+                    <span class="list__item"> <a href="#0"> Йога <span>8</span> </a> </span>
                 </div>
             
             </section>
