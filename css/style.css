@@ -14,6 +14,7 @@
 
 a{
     text-decoration: none;
+    /*font-family: Open-Sans;*/
 }
 
 .header, .container {
@@ -24,9 +25,7 @@ a{
 .popup__wrapper {
     position:fixed;
     display:flex;
-/*
     display: none;
-*/
     align-items:center;
     justify-content:center;
     top:0px;
@@ -263,11 +262,17 @@ a{
 .menu__item a{
     text-transform: uppercase;
     color: white;
+    font-size: 13px;
 }
 
 .menu__item:hover{
     border-bottom: 1px solid white;
 }
+
+.burger{
+    display: none;
+}
+
 
 .header__logo{
     width: 179px;
@@ -664,7 +669,16 @@ sup{
     color:#999999;
 }
 
+.copy a{
+    font-size: 13px;    
+}
+
 @media (max-width: 1024px) and (min-width: 769px) {
+    
+    .header .container{
+        display: flex;
+        flex-direction: row-reverse;
+    }
     
     .trends__galery{
         flex-wrap:wrap;
@@ -684,6 +698,19 @@ sup{
         display: none;
     }
     
+    .burger{
+        z-index: 2;
+        display: inline-block;
+}
+   
+    .burger button{
+        padding-top: 46px;
+        background-color: inherit;
+        border: none;
+        cursor: pointer;
+}
+
+  
     .card {
         margin-top: 58px;
         display: flex;
@@ -730,8 +757,12 @@ sup{
   
     @media (max-width: 768px) {
         
+        .burger{
+            align-self: flex-end;
+        }
+        
         .container {
-            max-width: 100vw;
+            max-width: 94vw;
         }
         
         .header__logo a img{
@@ -774,6 +805,18 @@ sup{
         .header__menu{
             display: none;
         }
+        
+        .burger{
+            z-index: 2;
+            display: inline-block;
+}
+   
+        .burger button{
+            padding-top: 46px;
+            background-color: inherit;
+            border: none;
+            cursor: pointer;
+}
         
         .header__title h1{
             font-size: 26px;
