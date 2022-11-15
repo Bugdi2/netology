@@ -557,10 +557,12 @@ time{
     background: #eeeeee; 
 }
 
-sup{
+.topic__span{
     color:#b59f5b;
     font-size: 12px;
     font-weight: bold;
+    position: absolute;
+    
 }
 
 .products{
