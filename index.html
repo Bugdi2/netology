@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
     
     
-     <title> NOEMI</title>
+    <title> NOEMI</title>
 </head>
 <body>
     
@@ -21,16 +21,20 @@
                 <h1 class="popup__titles">Ваш Фидбек</h1>
                 <section class="popup__form">
                     <span class="popup__span">Как часто вы заходите на сайт?</span>
-                    <select class="popup__input">
+                    <select class="popup__input" id="custom-input">
                         <option>Почти каждый день</option>
                         <option>Раз в несколько дней</option>
                         <option>Раз в несколько недель</option>
                         <option>Несколько раз в год</option>
                     </select>
+                    <label for="custom-input"></label>
                     <span class="popup__span">Вы подписаны на e-mail рассылку?</span>
                     <div class="popup__radio">
-                        <input name="point" type="radio" id="yes"> <label for="yes">Да</label>
-                        <input name="point" type="radio" id="no"> <label for="no">Нет</label>
+                            <input type="radio" class="custom-radio" id="yes" name="point" value="yes" > 
+                                <label for="yes">Да</label>
+                        
+                            <input  type="radio" class="custom-radio" id="no" name="point" value="no" > 
+                                <label for="no">Нет</label>
                     </div>
                     
                     <span class="popup__span">Расскажите, какой контент вы хотели бы видеть
