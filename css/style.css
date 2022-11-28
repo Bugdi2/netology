@@ -14,7 +14,7 @@
 
 a{
     text-decoration: none;
-    font-family: Open-Sans;
+    /*font-family: Open-Sans;*/
 }
 
 .header, .container {
@@ -25,9 +25,7 @@ a{
 .popup__wrapper {
     position:fixed;
     display:flex;
-/*
     display: none;
-*/
     align-items:center;
     justify-content:center;
     top:0px;
@@ -94,8 +92,10 @@ a{
     background-color: #f4f7f6;
     outline: none;
     border: none;
+    appearance: none;
     padding: 0 20px;
     box-sizing: border-box;
+    background: url("data:image/svg+xml;charset=UTF-8,%3csvg width='174' height='296' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M86.944.389l75.297 130.417H11.648L86.944.389zM86.945 296L11.648 165.583h150.593L86.944 296z' fill='%23B59F5B'/%3e%3c/svg%3e")  96% / 5% no-repeat;
     
 }
 
@@ -110,6 +110,38 @@ a{
 
 #no{
     margin-left: 15px;
+}
+
+.custom-radio{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.custom-radio+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+.custom-radio+label::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #b59f5b;
+    border-radius: 50%;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 84.8%;
+}
+
+.custom-radio:checked+label::before {
+    border-color: #b59f5b;
+    background-color: inherit;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='12px' height='12px'%3e%3cpath fill-rule='evenodd' fill='rgb(181, 159, 91)' d='M6.268,0.281 C9.341,0.281 11.833,2.773 11.833,5.846 C11.833,8.919 9.341,11.411 6.268,11.411 C3.195,11.411 0.703,8.919 0.703,5.846 C0.703,2.773 3.195,0.281 6.268,0.281 Z'/%3e%3c/svg%3e");
 }
 
 .popup__close{
@@ -239,6 +271,10 @@ a{
     color: white;
     text-transform: uppercase;
     font-size: 20px;
+}
+
+.galary__title h2 a:hover{
+    color: #b6a05c;
 }
 
 .container{
